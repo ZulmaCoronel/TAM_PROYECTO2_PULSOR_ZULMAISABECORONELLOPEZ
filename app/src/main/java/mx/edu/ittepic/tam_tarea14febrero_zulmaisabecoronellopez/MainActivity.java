@@ -55,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Haz ganado!!", Toast.LENGTH_SHORT).show();
                     timer.cancel();
                 }else {
-                    Toast.makeText(MainActivity.this, "Sigue intentando...", Toast.LENGTH_SHORT).show();
+                    random = (float) (Math.random()*3);
+                    a = df.format(random);
+                    numero.setText(""+a);
                 }
             }
         });
